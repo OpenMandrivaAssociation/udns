@@ -11,7 +11,6 @@ License:	LGPL
 URL:		http://www.corpit.ru/mjt/udns.html
 Source0:	http://www.corpit.ru/mjt/udns/%{name}_%{version}.tar.gz
 BuildConflicts:	%{name}-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 UDNS is a stub DNS resolver library with ability to perform both syncronous and
