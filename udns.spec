@@ -75,9 +75,13 @@ install -m0644 dnsget.1 %{buildroot}%{_mandir}/man1/udns-dnsget.1
 install -m0644 rblcheck.1 %{buildroot}%{_mandir}/man1/udns-rblcheck.1
 install -m0644 udns.3 %{buildroot}%{_mandir}/man3/
 
+%if %mdkversion < 200900
 %post -n %{libname} -p /sbin/ldconfig
+%endif
 
+%if %mdkversion < 200900
 %postun -n %{libname} -p /sbin/ldconfig
+%endif
 
 %clean
 rm -rf %{buildroot}
