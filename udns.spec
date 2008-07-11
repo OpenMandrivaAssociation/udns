@@ -5,13 +5,13 @@
 Summary:	DNS Resolver Library
 Name:		udns
 Version:	0.0.9
-Release:	%mkrel 1
+Release:	%mkrel 2
 Group:		Networking/Other
 License:	LGPL
 URL:		http://www.corpit.ru/mjt/udns.html
 Source0:	http://www.corpit.ru/mjt/udns/%{name}_%{version}.tar.gz
 BuildConflicts:	%{name}-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 UDNS is a stub DNS resolver library with ability to perform both syncronous and
@@ -104,4 +104,3 @@ rm -rf %{buildroot}
 %{_libdir}/libudns.so
 %{_libdir}/libudns.a
 %{_mandir}/man3/udns.3*
-
