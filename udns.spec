@@ -5,9 +5,9 @@
 Summary:	DNS Resolver Library
 Name:		udns
 Version:	0.0.9
-Release:	%mkrel 2
+Release:	%mkrel 3
 Group:		Networking/Other
-License:	LGPL
+License:	LGPLv2+
 URL:		http://www.corpit.ru/mjt/udns.html
 Source0:	http://www.corpit.ru/mjt/udns/%{name}_%{version}.tar.gz
 BuildConflicts:	%{name}-devel
