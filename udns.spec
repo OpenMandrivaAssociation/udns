@@ -4,12 +4,12 @@
 
 Summary:	DNS Resolver Library
 Name:		udns
-Version:	0.0.9
-Release:	%mkrel 3
+Version:	0.1
+Release:	%mkrel 1
 Group:		Networking/Other
 License:	LGPLv2+
 URL:		http://www.corpit.ru/mjt/udns.html
-Source0:	http://www.corpit.ru/mjt/udns/%{name}_%{version}.tar.gz
+Source0:	http://www.corpit.ru/mjt/udns/%{name}-%{version}.tar.gz
 BuildConflicts:	%{name}-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -74,14 +74,6 @@ install -m0755 udns-dnsget %{buildroot}%{_bindir}/
 install -m0644 dnsget.1 %{buildroot}%{_mandir}/man1/udns-dnsget.1
 install -m0644 rblcheck.1 %{buildroot}%{_mandir}/man1/udns-rblcheck.1
 install -m0644 udns.3 %{buildroot}%{_mandir}/man3/
-
-%if %mdkversion < 200900
-%post -n %{libname} -p /sbin/ldconfig
-%endif
-
-%if %mdkversion < 200900
-%postun -n %{libname} -p /sbin/ldconfig
-%endif
 
 %clean
 rm -rf %{buildroot}
