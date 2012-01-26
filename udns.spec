@@ -4,7 +4,7 @@
 
 Summary:	DNS Resolver Library
 Name:		udns
-Version:	0.1
+Version:	0.2
 Release:	%mkrel 1
 Group:		Networking/Other
 License:	LGPLv2+
