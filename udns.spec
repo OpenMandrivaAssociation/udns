@@ -96,3 +96,37 @@ rm -rf %{buildroot}
 %{_libdir}/libudns.so
 %{_libdir}/libudns.a
 %{_mandir}/man3/udns.3*
+
+
+%changelog
+* Thu Jan 26 2012 Luis Daniel Lucio Quiroz <dlucio@mandriva.org> 0.2-1mdv2012.0
++ Revision: 769225
+- 0.2
+
+  + Colin Guthrie <cguthrie@mandriva.org>
+    - New version: 0.1
+
+* Mon May 25 2009 Jérôme Brenier <incubusss@mandriva.org> 0.0.9-3mdv2010.0
++ Revision: 379713
+- fix license (LGPLv2+)
+
+* Fri Jul 11 2008 Oden Eriksson <oeriksson@mandriva.com> 0.0.9-2mdv2009.0
++ Revision: 233794
+- rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - do not call ldconfig in %%post/%%postun, it is now handled by filetriggers
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Thu Nov 22 2007 Oden Eriksson <oeriksson@mandriva.com> 0.0.9-1mdv2008.1
++ Revision: 111134
+- import udns
+
+
+* Thu Nov 22 2007 Oden Eriksson <oeriksson@mandriva.com> 0.0.9-1mdv2008.1
+- initial Mandriva package
