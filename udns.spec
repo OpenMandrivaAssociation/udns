@@ -8,7 +8,7 @@ Version:	0.6
 Release:	1
 Group:		Networking/Other
 License:	LGPLv2+
-URL:		http://www.corpit.ru/mjt/udns.html
+URL:		https://www.corpit.ru/mjt/udns.html
 Source0:	http://www.corpit.ru/mjt/udns/%{name}-%{version}.tar.gz
 BuildConflicts:	%{name}-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
