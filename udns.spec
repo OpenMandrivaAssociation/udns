@@ -13,6 +13,11 @@ Source0:	http://www.corpit.ru/mjt/udns/%{name}-%{version}.tar.gz
 BuildConflicts:	%{name}-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 UDNS is a stub DNS resolver library with ability to perform both syncronous and
 asyncronous DNS queries.
